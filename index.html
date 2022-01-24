@@ -1,0 +1,640 @@
+<!--Created by Atakan Unsal-->
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>Collecty Labs | World’s most prestige NFT</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- aos -->
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <link rel="icon" sizes="128x128" href="images/logo.png">
+  <link rel="apple-touch-icon" sizes="128x128" href="images/logo.png">
+  <link rel="shortcut icon" sizes="128x128" href="images/logo.png">
+
+  <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script> AOS.init();</script>
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/logo2.png" type="image/x-icon">
+  <link rel="icon" href="images/logo2.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+  <a id="button" style="align-content: center;">
+    <svg class="uparrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+      <path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" />
+    </svg>
+  </a>
+
+  <!-- hero area -->
+
+  <div class="sticky-container" id="home">
+    <div id="anchor" class="sticky3">
+      <!-- navigation -->
+      <section class="fixed-top navigation" style="position: relative !important;">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-logo" href="index.html"><img src="images/logo.png" height="50px" width="50px" alt=""></a>
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbar"
+              aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- navbar -->
+            <div class="collapse navbar-collapse text-center" id="navbar">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a href="https://twitter.com/collectylabs" target="_blank" class="btn animated-button victoria-one"
+                    style="margin-top: 0;width: 40px; height: 40px; padding: 8px 8px 8px 8px;"><img
+                      src="images/smallimg/twitter-xxl.png" height="100%" width="100%" /></a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://discord.gg/collectylabs" target="_blank"
+                    class="btn btn-sm animated-button victoria-one"
+                    style="margin-top: 0; width: 40px; height: 40px;  padding: 8px 8px 8px 8px;"><img
+                      src="images/smallimg/discord.png" height="100%" width="100%" /></a>
+                </li>
+              </ul>
+              <a href="#" class="btn btn-primary  primary-shadow">Whitepaper</a>
+            </div>
+          </nav>
+        </div>
+      </section>
+      <!-- /navigation -->
+      <canvas id="canvas"></canvas>
+      <img id="phone-bg" src="images/123.jpg"></img>
+      <section class="hero-section hero">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center zindex-1" id="collecty-header">
+              <h1 style="position:relative;" class="heading-style textshadow">Collecty</h1>
+              <svg class="labswave" viewbox="0 0 100 20">
+                <defs>
+                  <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                    <stop offset="100%" stop-color="#4FFEC5" />
+                    <stop offset="100%" stop-color="#4FFEC5" />
+                  </linearGradient>
+                  <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+                    <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z"
+                      mask="url(#mask)" fill="url(#gradient)">
+                      <animateTransform attributeName="transform" begin="0s" dur="1.5s" type="translate" from="0,0"
+                        to="40,0" repeatCount="indefinite" />
+                    </path>
+                  </pattern>
+                </defs>
+                <text class="labstext" text-anchor="middle" x="50" y="14" font-size="9" fill="#fff"
+                  fill-opacity="1">L A B S</text>
+                <text class="labstext" text-anchor="middle" x="50" y="14" font-size="9" fill="url(#wave)"
+                  fill-opacity="1">L A B S</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- /hero area -->
+
+  <!-- aboutus -->
+
+  <div class="container" data-aos="fade-up" data-aos-anchor-placement="center-center">
+    <div class="sticky-container-about">
+      <div class="stickyabout">
+        <section class="section-lg pb-0 pricing" id="feature">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 text-center" id="about-header">
+                <h2 style="color:#ffffff" class="section-title">Collecty.</h2>
+                <div>
+                  <p>
+                    “World’s most prestige NFT incubator designed for high-level influencers, artists & brands” </p>
+                  <p class="mb-50">
+                    Collecty is designed to build a bridge between brands and fans. Providing access to highly utilized
+                    NFTs, users of the platform will be able to participate in a secure and compliant environment and
+                    use
+                    assets both in and beyond the current ERC20 standards. </p>
+                  <img src="images/logo.png" width="100px" height="100px">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- /aboutus -->
+
+  <!-- roadmap -->
+
+  <canvas id="canvas1"></canvas>
+  <div class="container">
+    <div class="sticky-container-long" id="roadmap">
+      <div style="margin-top: 200px;" id="roadmaphref"></div>
+      <div id="anchor1" class="sticky2">
+        <section class="section-lg pb-0 pricing">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <div class="text-center" id="roadmap-header">
+                <div id="roadmapheader" class="center-roadmap-absolute">
+                  <h2 style="position: absolute; color: #ffffff;" class="center-roadmap-absolute">Roadmap
+                  </h2>
+                </div>
+                <br>
+                <div data-aos="fade-up" data-aos-anchor-placement="center-center" id="roadmap1"
+                  style="position: absolute;" class="centerabsolute ">
+                  <h3 class="section-title rmtext">.01 <br>Launch of
+                    Collecty‘s native NFTs
+                  </h3>
+                  <p class="mb-100">Intended to become
+                    the special ticket system for future releases...
+                </div>
+                <div id="roadmap2" style="position: absolute;" class="centerabsolute ">
+                  <h3 class="section-title rmtext">.02<br>
+                    Collaboration with high-level influencers & brands
+                  </h3>
+                  <p class="mb-100">...Releasing limited edition NFTs with maximized utility.</p>
+                </div>
+                <div id="roadmap3" style="position: absolute;" class="centerabsolute ">
+                  <h3 class="section-title rmtext">.03 <br>NFT goes
+                    DeFi
+                  </h3>
+                  <p class="mb-100">Our native NFT will become your passive income generator.</p>
+                </div>
+                <div id="roadmap4" style="position: absolute;" class="centerabsolute ">
+                  <h3 class="section-title rmtext">.04 <br>Launch of
+                    Collecty‘s official digital art gallery <br>in the metaverse
+                  </h3>
+                  <p class="mb-100"></p>
+                </div>
+                <div id="roadmap5" style="position: absolute;" class="centerabsolute ">
+                  <h3 class="section-title rmtext">.05<br>
+                    Partnership with metaverse developers <br>for Digital Real Estate
+                  </h3>
+                  <p class="mb-100"></p>
+                </div>
+                <div id="roadmap6" style="position: absolute;" class="centerabsolute ">
+                  <h3 class="section-title rmtext">.06 <br>Auction
+                    sales for special asset-backed NFTs
+
+                  </h3>
+                  <p data-aos="fade-up" data-aos-anchor-placement="center-center" class="mb-100"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- /roadmap -->
+
+  <!-- team -->
+
+  <div class="sticky-container-team" data-aos="fade-up" data-aos-anchor-placement="center-center">
+    <div class="sticky3">
+      <section class="section-lg team" id="team">
+        <div id="team-header">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 text-center">
+                <div class="text-center">
+                  <h2 class="section-title">Our Team</h2>
+                  <p class="mb-100"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-10 mx-auto">
+            <div class="team-slider">
+
+              <!-- team-member -->
+              <div class="team-member">
+                <div class="d-flex mb-4">
+                  <div style="margin: 0 auto;">
+                    <div class="align-self-center">
+                      <h4 class="text-color">Selman Gultekin</h4>
+                      <h6 class="text-color">CEO , Co-Founder</h6>
+                    </div>
+                  </div>
+                </div>
+                <p class="text-color"></p>
+              </div>
+
+              <!-- team-member -->
+              <div class="team-member">
+                <div class="d-flex mb-4">
+                  <div style="margin: 0 auto;">
+                    <div class="align-self-center">
+                      <h4 class="text-color">Bahadır Balli</h4>
+                      <h6 class="text-color">CTO, Co-Founder</h6>
+                    </div>
+                  </div>
+                </div>
+                <p class="text-color"></p>
+              </div>
+
+              <!-- team-member -->
+              <div class="team-member">
+                <div class="d-flex mb-4">
+                  <div style="margin: 0 auto;">
+                    <div class="align-self-center">
+                      <h4 class="text-color">Aleyna Kocak</h4>
+                      <h6 class="text-color">Project Engineer </h6>
+                    </div>
+                  </div>
+                </div>
+                <p class="text-color"></p>
+              </div>
+
+              <!-- team-member -->
+              <div class="team-member">
+                <div class="d-flex mb-4">
+                  <div style="margin: 0 auto;">
+                    <div class="align-self-center">
+                      <h4 class="text-color">Melisa Ozyurek</h4>
+                      <h6 class="text-color">Art Director</h6>
+                    </div>
+                  </div>
+                </div>
+                <p class="text-color"></p>
+              </div>
+
+              <!-- team-member -->
+              <div class="team-member">
+                <div class="d-flex mb-4">
+                  <div style="margin: 0 auto;">
+                    <div class="align-self-center">
+                      <h4 class="text-color">Tuba </h4>
+                      <h6 class="text-color">Designer</h6>
+                    </div>
+                  </div>
+                </div>
+                <p class="text-color"></p>
+              </div>
+
+              <!-- team-member -->
+              <div class="team-member">
+                <div class="d-flex mb-4">
+                  <div style="margin: 0 auto;">
+                    <div class="align-self-center">
+                      <h4 class="text-color">Arca </h4>
+                      <h6 class="text-color">Designer</h6>
+                    </div>
+                  </div>
+                </div>
+                <p class="text-color"></p>
+              </div>
+            </div>
+          </div>
+          <img src="" alt="" class="img-fluid team-bg">
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- Site footer -->
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div id="footerabout" class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify"
+            style="font-weight: 300; font-size: 17px; line-height: 31px; color: rgb(110, 110, 110);">Collecty is
+            designed to build a bridge between brands and fans. Providing access to highly utilized NFTs, users of the
+            platform will be able to participate in a secure and compliant environment and use assets both in and beyond
+            the current ERC20 standards.</a>
+        </div>
+
+        <div id="footerlogo" style="margin: 0 auto;">
+          <img src="images/logo2.png" width="100px" height="100px"></img>
+        </div>
+
+        <div class="col-xs-6 col-md-4"></div>
+
+        <div id="footerlinks" class="col-xs-6 col-md-2">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a class="nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#feature">About Us</a></li>
+            <li><a class="nav-link" href="#roadmaphref">RoadMap</a></li>
+            <li><a class="nav-link" href="#team">Team</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12" style="margin-top: 5px;">
+          <p class="copyright-text">Copyright &copy; 2022 <a href="#" style="color: #ffffff;">Collecty Labs Inc.</a> All
+            Rights Reserved.
+          </p>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="twitter" href="https://twitter.com/collectylabs" target="_blank"><img
+                  src="images/smallimg/twitter-xxl.png" height="50%" width="50%" /></a>
+            </li>
+            <li><a class="discord" href="https://discord.gg/collectylabs" target="_blank"><img
+                  src="images/smallimg/discord.png" height="50%" width="50%" /></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- /Site footer -->
+
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+
+  <!-- jQuery -->
+  <script src="plugins/jQuery/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <!-- slick slider -->
+  <script src="plugins/slick/slick.min.js"></script>
+  <!-- aos -->
+  <script src="plugins/aos/aos.js"></script>
+  <!-- Main Script -->
+  <script src="dist/script.js"></script>
+  <!-- FrameByFrame -->
+  <script src="dist/frameByFrame.js"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>AOS.init();</script>
+
+  <script>
+    if (window.screen.width > 600) {
+      $("#canvas").frameByFrame(
+        [
+          [0, 800],
+          [0, 72]
+        ],
+        {
+          canvasWidth: 2560,
+          canvasHeight: 1080,
+          canvasImagesPath: "images/backgrounds/bgframe/",
+          canvasImagesFormat: ".jpg",
+          frameCount: 72,
+          anchor: "#anchor"
+        }
+      );
+    }
+  </script>
+  <script>
+    if (window.screen.width > 600) {
+      $("#canvas1").frameByFrame(
+        [
+          [0, 4200],
+          [0, 78]
+        ],
+        {
+          canvasWidth: 1920,
+          canvasHeight: 1080,
+          canvasImagesPath: "images/backgrounds/rmframes/",
+          canvasImagesFormat: ".jpg",
+          frameCount: 78,
+          anchor: "#anchor1"
+        }
+      );
+    }
+  </script>
+
+  <script>
+    $(window).scroll(function () {
+      if ($(this).scrollTop() < 1000) {
+        $('#canvas').fadeIn();
+      }
+
+      if ($(this).scrollTop() < 2250) {
+        $('#canvas1').fadeOut();
+      }
+
+      if ($(this).scrollTop() > 2250 && $(this).scrollTop() < 6000) {
+        $('#canvas').fadeOut();
+        $('#canvas1').fadeIn();
+      }
+      if ($(this).scrollTop() > 6000) {
+        $('#canvas').fadeOut();
+        $('#canvas1').fadeOut();
+      }
+    });
+
+  </script>
+
+  <script>
+
+    var btn = $('#button');
+
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > 1000) {
+        btn.addClass('show');
+      } else {
+        btn.removeClass('show');
+      }
+    });
+
+    btn.on('click', function (e) {
+      e.preventDefault();
+      $('html, body').animate({ scrollTop: 0 }, '0');
+    });
+
+    $(document).ready(function () {
+      $('#nav').onePageNav();
+    });
+
+  </script>
+
+  <!--Sectionlar arasi otomatik gecisi aktive etmek icin screen width degerini 600 yapin-->
+  <script>
+
+    if (window.screen.width > 99600) {
+
+      var lastScrollTop = 0;
+      $(window).on('scroll', function () {
+        st = $(this).scrollTop();
+        if (st < lastScrollTop) {
+          if ($(this).scrollTop() > 6300 && $(this).scrollTop() < 6400) {
+            window.scrollTo({ top: 5600, behavior: 'smooth' });
+          }
+          if ($(this).scrollTop() > 2500 && $(this).scrollTop() < 2600) {
+            window.scrollTo({ top: 1740, behavior: 'smooth' });
+          }
+          if ($(this).scrollTop() > 1300 && $(this).scrollTop() < 1400) {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }
+        }
+        else {
+          if ($(this).scrollTop() > 750 && $(this).scrollTop() < 850) {
+            window.scrollTo({ top: 1400, behavior: 'smooth' });
+          }
+          if ($(this).scrollTop() > 1750 && $(this).scrollTop() < 1800) {
+            window.scrollTo({ top: 2600, behavior: 'smooth' });
+          }
+          if ($(this).scrollTop() > 5700 && $(this).scrollTop() < 5750) {
+            window.scrollTo({ top: 6400, behavior: 'smooth' });
+          }
+        }
+        lastScrollTop = st;
+      });
+    }
+  </script>
+
+  <script>
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 500) {
+        $('#phone-bg').fadeOut();
+      } else {
+        $('#phone-bg').fadeIn();
+      }
+    });
+  </script>
+
+  <script>
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 2260 && $(this).scrollTop() < 6000) {
+        $('#roadmap-header').fadeIn();
+      }
+      else {
+        $('#roadmap-header').fadeOut();
+      }
+    });
+  </script>
+
+  <script>
+    $(window).scroll(function () {
+      if ($(this).scrollTop() < 2460) {
+        $('#roadmap2').fadeOut();
+        $('#roadmap3').fadeOut();
+        $('#roadmap4').fadeOut();
+        $('#roadmap5').fadeOut();
+        $('#roadmap6').fadeOut();
+      } else {
+        if ($(this).scrollTop() < 2900) {
+          $('#roadmap1').fadeIn();
+          $('#roadmap2').fadeOut();
+          $('#roadmap3').fadeOut();
+          $('#roadmap4').fadeOut();
+          $('#roadmap5').fadeOut();
+          $('#roadmap6').fadeOut();
+        } else {
+          if ($(this).scrollTop() > 2900 && $(this).scrollTop() < 3100) {
+            $('#roadmap1').fadeOut();
+          }
+          else {
+            if ($(this).scrollTop() > 3100 && $(this).scrollTop() < 3500) {
+              $('#roadmap1').fadeOut();
+              $('#roadmap2').fadeIn();
+              $('#roadmap3').fadeOut();
+              $('#roadmap4').fadeOut();
+              $('#roadmap5').fadeOut();
+              $('#roadmap6').fadeOut();
+            }
+            else {
+              if ($(this).scrollTop() > 3500 && $(this).scrollTop() < 3700) {
+                $('#roadmap2').fadeOut();
+              }
+              else {
+                if ($(this).scrollTop() > 3700 && $(this).scrollTop() < 4100) {
+                  $('#roadmap3').fadeIn();
+                  $('#roadmap2').fadeOut();
+                  $('#roadmap1').fadeOut();
+                  $('#roadmap4').fadeOut();
+                  $('#roadmap5').fadeOut();
+                  $('#roadmap6').fadeOut();
+                }
+                else {
+                  if ($(this).scrollTop() > 4100 && $(this).scrollTop() < 4200) {
+                    $('#roadmap3').fadeOut();
+                  } else {
+                    if ($(this).scrollTop() > 4200 && $(this).scrollTop() < 4600) {
+                      $('#roadmap4').fadeIn();
+                      $('#roadmap2').fadeOut();
+                      $('#roadmap3').fadeOut();
+                      $('#roadmap1').fadeOut();
+                      $('#roadmap5').fadeOut();
+                      $('#roadmap6').fadeOut();
+                    } else {
+                      if ($(this).scrollTop() > 4600 && $(this).scrollTop() < 4800) {
+                        $('#roadmap4').fadeOut();
+                      }
+                      else {
+                        if ($(this).scrollTop() > 4800 && $(this).scrollTop() < 5200) {
+                          $('#roadmap5').fadeIn();
+                          $('#roadmap2').fadeOut();
+                          $('#roadmap1').fadeOut();
+                          $('#roadmap4').fadeOut();
+                          $('#roadmap3').fadeOut();
+                          $('#roadmap6').fadeOut();
+                        }
+                        else {
+                          if ($(this).scrollTop() > 5200 && $(this).scrollTop() < 5400) {
+                            $('#roadmap5').fadeOut();
+                          } else {
+                            if ($(this).scrollTop() > 5400 && $(this).scrollTop() < 6000) {
+                              $('#roadmap6').fadeIn();
+                              $('#roadmap2').fadeOut();
+                              $('#roadmap3').fadeOut();
+                              $('#roadmap1').fadeOut();
+                              $('#roadmap5').fadeOut();
+                              $('#roadmap4').fadeOut();
+                            } else {
+                              if ($(this).scrollTop() > 6000) {
+                                $('#roadmap6').fadeOut();
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    });
+  </script>
+
+  <script>
+    if (history.scrollRestoration) {
+      history.scrollRestoration = 'manual';
+    } else {
+      window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+      }
+    }
+  </script>
+
+  <script>
+    $(window).on("load", function () {
+      $(".loader-wrapper").fadeOut();
+      $('#canvas1').hide();
+    });
+  </script>
+
+</body>
+
+</html>
